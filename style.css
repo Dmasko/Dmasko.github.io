@@ -45,11 +45,25 @@ img {
 }
 
 body { 
-  padding-bottom: 70px;
+  width:100%;
+  
 }
+
 
 .img-responsive{
 
-  width: 500px;
+  height: 400px;
+
+  
   
 }
+
+/* * {
+
+margin:0;
+width:0;
+box-sizing: border-box;
+} */
+
+
+
