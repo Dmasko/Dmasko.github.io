@@ -1,109 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+	<title>Portfolio</title>
+	<!-- css files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
-
-    <title>PORTIFOLIO</title>
-    <link href="style.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+	<meta name="author" content="Hassan Ali">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+	<body>
+		<!-- Navbar -->
+		<nav class="nav container void-background">
+			<!-- This "nav-menu" is hidden on mobile -->
+			<!-- Add the modifier "is-active" to display it on mobile -->
+			<div class="nav-left">
+				<!--<a href="http://medium.com/@hassanhelfi/" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-medium"></i>
+					</span>-->
+				</a>
+				<a href="http://github.com/dmasko" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-github"></i>
+					</span>
+				</a>
+				<!--
+				<a href="https://twitter.com/hassanhelfi" class="nav-item">
+					<span class="icon">
+						<i class="fa fa-twitter"></i>
+					</span>
+				</a>	-->			
+			</div>
 
-<header>
+			<!--<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">A propos</a>
+				<a class="nav-item" href="#projects">Projets</a>
+				<a class="nav-item" href="#social">Social</a>
+			</div> -->
 
-  <!-- <div class="myNavbar">
-    <div class="container-fluid ">
-		<div class="navbar-header">
-			<a href="#">Dmasko</a>
-		</div>
-		<div>
-			<ul class="nav navbar-nav" id = "navStuff">
-				<li><a href="#about" ><span class="about"></span> About</a></li>
-				<li><a href="#portfolio"><span class="portfolio"></span> Portfolio</a></li>
-				<li><a href="#contact"><span class="contact"></span> Contact</a></li>
-			</ul>
-		</div>
-	</div>
-</div>   -->
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+			<span class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</nav>
+				
+		<!-- About Me -->
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<!-- Source: https://flic.kr/p/pAZBNK -->
+				<img class="avatar" src="assets/img/profile.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro">
+					 Developpeur, c'est ici que je partage mes projets passé et futur !
+				</p>
+			</div>
+		</section>
+		
+		<!-- Projects -->
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">PROJETS</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Project 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<video src="assets/img/Krabby_le_crabe_.mp4" width=320  height=240 controls poster="vignette.jpg">
+										</video>
+									</figure>
+								</div>
+								<div>			
+									<p>Jeu d'arcade crée en python à l'aide de pygame <a href="https://github.com/Dmasko/Project-perso" target="_blank">Code source</a>									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Project 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="assets/img/project-2.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										Site Html Css Agence web fictive, contenant un site fitness, de restauration et de coiffure <a href="https://agencekouda.github.io/" target="_blank">Lien</a>
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  
+		<!-- Social -->
+	
 
-<h1>Attention site en travaux ! <i class="em em-construction  " aria-role="presentation" aria-label="BIRD"></i>
-</h1>
-    
-
-</header>
-
-<body>
-
-
-<!-- Home -->
-<section class="image-bg-fluid-height" id="about">
-  <h1>Taghzout Daoud</h1>
-  <img class="img-responsive" src="images/dessin1.svg">
-
-  
-  <h3>Etudiant</h3>
-  <p>Bienvenue sur mon site, <br>ici je partage mes projets passé et à venir !</p>
-  
-</section>
-<!--End Home-->
-<!--About-->
-<section class="image-bg-fluid-height" id="portfolio">
-  <h1>Portfolio</h1>
-
-
-  <div>
-    
-    <h1 style="color:black; text-decoration:underline">Krabby le crabe</h1>
-    <video src="video/Krabby_le_crabe*.mp4" width=320  height=240 controls poster="vignette.jpg">
-      
-      
-    </video>
-    
-
-  </div>
-  <a href="https://github.com/Dmasko/Project-perso">Code source</a>
-
- 
-</section>
-
-
-<!-- End Portfolio -->
-<!-- Contact -->
-<section class="image-bg-fluid-height" id="contact">
-  <form action = "mailto:taghzout.daoud@gmail.com" method = "post" enctype = "text/plain">
-    <div class = "row">
-      <h1> Contactez moi </h1>
-      <br></br>
-      <div class = "form-group">
-        <label for = "name">Nom: </label>
-        <input type = "name" id = "name" class="form-control" placeholder = "Taper Nom" size = "50">
-    </div>
-    <div class = "form-group">
-               <label for = "email">Email: </label>
-        <input type = "email" id = "email" class = "form-control" placeholder = "Taper addresse email" size = "50">
-    </div>
-      <br></br>
-  <div class = "form-group">
-      <label class = "control-label" for = "comment">Commentaires: </label>
-        <input type = "comment" id = "comment" class = "form-control" size = "250">
-    <br></br>
-  <button type = "submit" class = "btn btn-default">Envoyer</button>
-      </div>
-    </div>
-      </div>
-      </form>
-</section>
-<!--End Contact -->
-
-
-
-
-
-
-    
-</body>
+		
+		<!-- Footer -->
+		<section class="section-4 has-text-centered container">
+			<a href="about.html" target="_blank">Taghzout Daoud</a>
+		</section>
+		
+		<!-- Scripts  -->
+		<script src="controller.js"></script>		
+	</body>	
 </html>
