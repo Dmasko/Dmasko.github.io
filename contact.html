@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="none">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="assets/css/stylecontact.css"/>
+    </head>
+    <body>
+
+        <div class="top-menu">
+            <ul>
+                <li class="left">  
+                    <a href="index.html">🏠</i></a>
+                </li>
+            </ul>
+        </div>   
+        
+        <br>
+
+        <div class="container">
+            <div class="columns">
+        <div class="column is-half">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+            <!-- Replace with your StaticForms accessKey -->
+            <input type="hidden" name="accessKey" value="ca8e4cfb-ea79-4001-b07c-d47b38129b4e">
+            <input type="hidden" name="subject" value="Test from jsfiddle">
+            <!-- Replace with the url you want to redirect to -->
+            <input type="hidden" name="redirectTo" value="https://dmasko.github.io/">
+            <div class="field">
+                <label class="label">Nom</label>
+                <div class="control">
+                <input class="input" type="text" name="name" placeholder="Entrer un nom" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                <input class="input" type="email" name="email" placeholder="Entrer un mail" required>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                <textarea class="textarea" name="message" placeholder="Entrer un message" required></textarea>
+                </div>
+            </div>
+            <button class="button is-primary" type="Submit">Envoyer</button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+          
+    
+    </body>
+</html>
