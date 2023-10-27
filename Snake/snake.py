@@ -15,7 +15,7 @@ class SnakeBody:
     def draw(self):
         self.rect.x = self.x_pos * SCALE
         self.rect.y = (self.y_pos * SCALE) - self.rect.height
-        self.rect.color = "yellow"
+        self.rect.color = "purple"
         canvas.render(self.rect)
 
 class Snake:
